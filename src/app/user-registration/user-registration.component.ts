@@ -31,7 +31,6 @@ export class UserRegistrationComponent implements OnInit {
   }
 
   submit() {
-    console.log(this.userForm);
     this._apiService
       .userCreate(this.userForm.value)
       .subscribe((response: any) => {
